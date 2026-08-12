@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png?v=2">
+    <link rel="manifest" href="assets/favicons/site.webmanifest?v=2">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg?v=2" color="#0b111e">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico?v=2">
+    <meta name="msapplication-TileColor" content="#0b111e">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml?v=2">
+    <meta name="theme-color" content="#0b111e">
+
+    <!--=============== SOCIAL SHARE PREVIEW (Open Graph / Twitter) ===============-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Girinath M | Portfolio">
+    <meta property="og:description" content="Portfolio of Girinath M.">
+    <meta property="og:url" content="https://portfolio-s-taupe.vercel.app/">
+    <meta property="og:image" content="https://portfolio-s-taupe.vercel.app/assets/favicons/android-chrome-512x512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Girinath M | Portfolio">
+    <meta name="twitter:description" content="Portfolio of Girinath M.">
+    <meta name="twitter:image" content="https://portfolio-s-taupe.vercel.app/assets/favicons/android-chrome-512x512.png">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Girinath M | Portfolio</title>
+</head>
+
+<body>
+    <!--=============== INTRO ===============-->
+    <div class="intro__overlay" id="intro-overlay" aria-hidden="true">
+        <div class="intro__content">
+            <p class="intro__text">Bringing ideas to life...</p>
+            <span class="intro__glow"></span>
+        </div>
+    </div>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Girinath M</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link" aria-label="Home">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" aria-label="About">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link" aria-label="Skills">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link" aria-label="Projects">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#resume" class="nav__link" aria-label="Resume">
+                            <i class='bx bx-file'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" aria-label="Contact">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <button type="button" class="nav__link nav__chat-button" id="chatbox-open" aria-label="Ask about Girinath">
+                            <i class='bx bx-bot'></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Girinath M</h1>
+                    <h3 class="home__education">Electrical &amp; Electronics Engineering Undergraduate</h3>
+
+                    <div class="home__button">
+                        <a download href="assets/pdf/Girinath_M_Resume.pdf" class="button button--ghost">
+                            Download Resume
+                        </a>
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle home__handle--warrior">
+                    <div class="home__warrior-card">
+                        <div class="home__warrior-visual">
+                            <img src="assets/img/girinath-warrior.jpg" alt="Warrior illustration" class="home__warrior-img">
+                        </div>
+                        <p class="home__warrior-quote">Acta, non verba—Deeds, not words</p>
+                        <span class="home__warrior-author">— Girinath M</span>
+                    </div>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/mgirinath05" target="_blank" rel="noopener" class="home__social-link" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/mgirinath" target="_blank" rel="noopener" class="home__social-link" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="mailto:mgirinath05@gmail.com" class="home__social-link" aria-label="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/girinath-profile.png" alt="Girinath M profile photo" class="about__img girinath__about-img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-book-open about__icon'></i>
+                            <h3 class="about__title">Education</h3>
+                            <span class="about__subtitle">B.E. EEE · 2023–2027</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">CGPA</h3>
+                            <span class="about__subtitle">8.06 / 10</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-world about__icon'></i>
+                            <h3 class="about__title">Languages</h3>
+                            <span class="about__subtitle">Tamil · English · Hindi</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Electrical Engineering undergraduate bringing a unique blend of hardware-level systems thinking and software development skills in Java, SQL, and Python. Adaptable and quick to learn, seeking an entry-level software development role where embedded systems knowledge and programming ability intersect.
+                        <span class="about__hsc-line">HSC: 74.83% from M.S.P. Solai Nadar Memorial Boys HSS, Dindigul.</span>
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Programming &amp; Tools</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">AutoCAD</h3>
+                                    <span class="skills__level">Design &amp; Drafting</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Programming</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__level">Database</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Embedded C++</h3>
+                                    <span class="skills__level">Embedded</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">MATLAB / Simulink</h3>
+                                    <span class="skills__level">Engineering</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">VS Code</h3>
+                                    <span class="skills__level">Development</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">GitHub</h3>
+                                    <span class="skills__level">Version Control</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Platforms &amp; Technologies</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Arduino IDE</h3>
+                                    <span class="skills__level">Embedded Platform</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Blynk IoT Cloud</h3>
+                                    <span class="skills__level">IoT Platform</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">ESP32</h3>
+                                    <span class="skills__level">Microcontroller</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">ESP8266</h3>
+                                    <span class="skills__level">IoT Hardware</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">SAP Build</h3>
+                                    <span class="skills__level">Joule Studio</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Foundation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== EXPERIENCE / SERVICES STYLE ===============-->
+        <section class="services section">
+            <span class="section__subtitle">Industry Exposure</span>
+            <h2 class="section__title">Experience &amp; Learning</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">TNPL <br> Internship</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Tamil Nadu Newsprint and Papers Limited</h3>
+                            <p class="services__modal-description">Industrial Intern · 2025 · Pugalur</p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item"><i class='bx bx-check-circle'></i><p class="services__modal-info">Hands-on exposure to industrial automation.</p></li>
+                                <li class="services__modal-item"><i class='bx bx-check-circle'></i><p class="services__modal-info">Observed renewable energy conversion systems.</p></li>
+                                <li class="services__modal-item"><i class='bx bx-check-circle'></i><p class="services__modal-info">Learned about power distribution and heavy electrical machinery.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Poppys <br> Internship</h3>
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Poppys Knit Wear Pvt. Ltd.</h3>
+                            <p class="services__modal-description">Industrial Intern · 2025 · Kangeyam</p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item"><i class='bx bx-check-circle'></i><p class="services__modal-info">Explored industrial textile manufacturing processes.</p></li>
+                                <li class="services__modal-item"><i class='bx bx-check-circle'></i><p class="services__modal-info">Studied sustainable solar energy integration for industrial power.</p></li>
+                                <li class="services__modal-item"><i class='bx bx-check-circle'></i><p class="services__modal-info">Observed practical industrial electrical systems.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Technical <br> Workshops</h3>
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Workshops</h3>
+                            <p class="services__modal-description">Continuous learning in emerging electrical and AI technologies.</p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item"><i class='bx bx-check-circle'></i><p class="services__modal-info">Potential Applications of AI &amp; ML in Electrical Engineering — The Institution of Engineers (India), Tiruchirappalli · 07/2025.</p></li>
+                                <li class="services__modal-item"><i class='bx bx-check-circle'></i><p class="services__modal-info">Recent Advances in Hybrid Energy Storage Management for EV Applications — CSIR India · 09/2024.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class="work__item" data-filter='.embedded'>Embedded</span>
+                <span class="work__item" data-filter='.iot'>IoT</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix embedded">
+                    <img src="assets/img/girinath-humidifier.jpg" alt="Smart Ambient Humidifier" class="work__img girinath__work-img">
+                    <h3 class="work__title">Smart Ambient Humidifier</h3>
+                    <span class="work__meta">ESP32 · Embedded C++ · DHT22</span>
+                    <button type="button" class="work__button project-info-button" data-project="humidifier">
+                        Details <i class='bx bx-right-arrow work__icon'></i>
+                    </button>
+                </div>
+
+                <div class="work__card mix iot">
+                    <img src="assets/img/girinath-reactor.jpg" alt="IoT-Automated Water Treatment Reactor" class="work__img girinath__work-img">
+                    <h3 class="work__title">IoT-Automated Water Treatment Reactor</h3>
+                    <span class="work__meta">Arduino · ESP8266 · Blynk IoT Cloud</span>
+                    <button type="button" class="work__button project-info-button" data-project="reactor">
+                        Details <i class='bx bx-right-arrow work__icon'></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== PAPER PUBLICATION ===============-->
+        <section class="publication section">
+            <span class="section__subtitle">Published Work</span>
+            <h2 class="section__title">Paper Publication</h2>
+
+            <div class="publication__container container grid">
+                <div class="publication__card">
+                    <img src="assets/img/girinath-grasscutter.jpg" alt="IoT-Based Grass Cutting Robot" class="publication__img">
+                    <div class="publication__data">
+                        <span class="publication__badge">IEEE Xplore · 2026</span>
+                        <h3 class="publication__title">IoT-Based Grass Cutting Robot</h3>
+                        <p class="publication__description">Built a solar-powered, IoT-based autonomous grass-cutting robot; published at the International Conference on Innovative Computing (ICSES).</p>
+                        <a href="https://ieeexplore.ieee.org/document/11479098" target="_blank" rel="noopener" class="work__button">
+                            Live Link <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== CERTIFICATES / SWIPER STYLE ===============-->
+        <section class="testimonial section">
+            <span class="section__subtitle">Professional Learning</span>
+            <h2 class="section__title">Certificates &amp; Achievements</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <i class='bx bx-certification testimonial__credential-icon'></i>
+                        <h3 class="testimonial__name">Python &amp; IoT</h3>
+                        <p class="testimonial__description">Python Foundation Certification — Infosys Springboard. Introduction to IoT and Digital Transformation — Cisco &amp; NASSCOM.</p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <i class='bx bx-chip testimonial__credential-icon'></i>
+                        <h3 class="testimonial__name">SAP Learning</h3>
+                        <p class="testimonial__description">Exploring SAP S/4HANA Sales Essentials and Introducing Joule Studio in SAP Build — SAP Learning Hub.</p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <i class='bx bx-bot testimonial__credential-icon'></i>
+                        <h3 class="testimonial__name">Agentic AI</h3>
+                        <p class="testimonial__description">Micro-Certification — Agentic AI Executive, ServiceNow.</p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <i class='bx bx-trophy testimonial__credential-icon'></i>
+                        <h3 class="testimonial__name">Achievements</h3>
+                        <p class="testimonial__description">Cash Prize in SENSONICS 2024 Paper Presentation, Capgemini Brand Quest Campus Ambassador (2024), and NSS Member who organised and led college club initiatives.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination testimonial__pagination" aria-label="Certificates and achievements slide position"></div>
+            </div>
+        </section>
+
+        <!--=============== RESUME ===============-->
+        <section class="resume section" id="resume">
+            <span class="section__subtitle">Career Profile</span>
+            <h2 class="section__title">Resume</h2>
+
+            <div class="resume__container container">
+                <button type="button" class="resume__preview-card" id="resume-preview-open" aria-label="Open full resume preview">
+                    <span class="resume__preview-icon"><i class='bx bx-file'></i></span>
+                    <span class="resume__preview-copy">
+                        <strong>Girinath M — Resume</strong>
+                        <small>Touch or click to preview</small>
+                    </span>
+                    <span class="resume__preview-arrow"><i class='bx bx-chevron-right'></i></span>
+                </button>
+                <div class="resume__actions">
+                    <a download href="assets/pdf/Girinath_M_Resume.pdf" class="button">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h3 class="section__title">Contact Me</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">mgirinath05@gmail.com</span>
+                            <a href="mailto:mgirinath05@gmail.com" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bx-phone contact__card-icon'></i>
+                            <h3 class="contact__card-title">Phone</h3>
+                            <span class="contact__card-data">+91 81225 20060</span>
+                            <a href="tel:+918122520060" class="contact__button">
+                                Call Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-linkedin contact__card-icon'></i>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">/in/mgirinath05</span>
+                            <a href="https://www.linkedin.com/in/mgirinath05" target="_blank" rel="noopener" class="contact__button">
+                                Connect <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bx-map contact__card-icon'></i>
+                            <h3 class="contact__card-title">Location</h3>
+                            <span class="contact__card-data">Dindigul, Tamil Nadu, India</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Dindigul%2C+Tamil+Nadu%2C+India" target="_blank" rel="noopener" class="contact__button">
+                                View Location <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label for="contact-name" class="contact__form-tag">Name</label>
+                            <input id="contact-name" type="text" placeholder="Enter name" class="contact__form-input" required>
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="contact-mail" class="contact__form-tag">Mail</label>
+                            <input id="contact-mail" type="email" placeholder="Enter email" class="contact__form-input" required>
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="contact-message" class="contact__form-tag">Message</label>
+                            <textarea id="contact-message" cols="30" rows="10" placeholder="Write your Message" class="contact__form-input" required></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== PROJECT DETAILS MODAL ===============-->
+    <div class="project__modal" id="project-modal" aria-hidden="true">
+        <div class="project__modal-content">
+            <i class='bx bx-x project__modal-close' id="project-modal-close"></i>
+            <h3 class="services__modal-title" id="project-modal-title">Project</h3>
+            <p class="services__modal-description" id="project-modal-description"></p>
+        </div>
+    </div>
+
+    <!--=============== RESUME PREVIEW MODAL ===============-->
+    <div class="resume__modal" id="resume-modal" aria-hidden="true">
+        <div class="resume__modal-content">
+            <button type="button" class="resume__modal-close" id="resume-modal-close" aria-label="Close resume preview">
+                <i class='bx bx-x'></i>
+            </button>
+            <iframe class="resume__modal-frame" src="assets/pdf/Girinath_M_Resume.pdf#view=FitH" title="Girinath M full resume"></iframe>
+        </div>
+    </div>
+
+    <!--=============== CHATBOX ===============-->
+    <div class="chatbox" id="chatbox" aria-hidden="true">
+        <div class="chatbox__content">
+            <div class="chatbox__header">
+                <div>
+                    <span class="section__subtitle chatbox__subtitle">Portfolio Assistant</span>
+                    <h3 class="chatbox__title">Ask about Girinath</h3>
+                </div>
+                <button type="button" class="chatbox__close" id="chatbox-close" aria-label="Close chat">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+
+            <div class="chatbox__messages" id="chatbox-messages">
+                <div class="chatbox__message chatbox__message--bot">Hi! Ask me about Girinath's skills, education, projects, internships, certifications, achievements or contact details.</div>
+            </div>
+
+            <div class="chatbox__quick">
+                <button type="button" data-question="What are Girinath's key skills?">Key skills</button>
+                <button type="button" data-question="Tell me about Girinath's projects">Projects</button>
+                <button type="button" data-question="Why should we hire Girinath?">Why hire?</button>
+            </div>
+
+            <form class="chatbox__form" id="chatbox-form">
+                <input type="text" id="chatbox-input" placeholder="Ask a question..." autocomplete="off" aria-label="Ask about Girinath">
+                <button type="submit" aria-label="Send"><i class='bx bx-send'></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Girinath M</h1>
+
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+                <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+                <li class="footer__item"><a href="#skills" class="footer__link">Skills</a></li>
+                <li class="footer__item"><a href="#work" class="footer__link">Work</a></li>
+                <li class="footer__item"><a href="#resume" class="footer__link">Resume</a></li>
+                <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/mgirinath05" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn"><i class='bx bxl-linkedin footer__social-icon'></i></a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/mgirinath" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub"><i class='bx bxl-github footer__social-icon'></i></a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="mailto:mgirinath05@gmail.com" class="footer__social-link" aria-label="Email"><i class='bx bx-envelope footer__social-icon'></i></a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">&#169; 2026 Girinath M. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
