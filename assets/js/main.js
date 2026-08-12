@@ -202,7 +202,7 @@ const quickButtons = document.querySelectorAll(".chatbox__quick button");
 
 const profile = {
   education: "B.E. Electrical & Electronics Engineering at V.S.B Engineering College, Karur, Tamil Nadu (2023–2027), CGPA 8.06/10. HSC: 74.83% from M.S.P. Solai Nadar Memorial Boys HSS, Dindigul.",
-  skills: "Java, SQL, MATLAB/Simulink, VS Code, GitHub, Embedded C++, Arduino IDE, Blynk IoT Cloud, SAP Build (Joule Studio), ESP32 and ESP8266.",
+  skills: "Java, SQL, AutoCAD, MATLAB/Simulink, VS Code, GitHub, Embedded C++, Arduino IDE, Blynk IoT Cloud, SAP Build (Joule Studio), ESP32 and ESP8266.",
   projects: "Smart Ambient Humidifier using ESP32, Embedded C++ and DHT22; IoT-Automated Water Treatment Reactor using Arduino C++, ESP8266, Blynk IoT Cloud and Serial Communication; and the IEEE-published IoT-Based Grass Cutting Robot.",
   publication: "IoT-Based Grass Cutting Robot, published on IEEE Xplore in 2026 at the International Conference on Innovative Computing (ICSES).",
   internships: "Industrial internships at Tamil Nadu Newsprint and Papers Limited (TNPL), Pugalur, and Poppys Knit Wear Pvt. Ltd., Kangeyam, both in 2025.",
